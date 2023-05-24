@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Meu Formulário</title>
+    <title>Formulário de Dados Pessoais</title>
 </head>
 <body>
-    <h1>Meu Formulário</h1>
+    <h1>Formulário de Dados Pessoais</h1>
     <form action="processar.php" method="POST" enctype="multipart/form-data">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome" required><br><br>
         
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required><br><br>
         
-        <label for="arquivo">Arquivo:</label>
-        <input type="file" id="arquivo" name="arquivo" required>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+        
+        <label for="documento">Documento:</label>
+        <input type="file" id="documento" name="documento" required><br><br>
         
         <input type="submit" value="Enviar">
     </form>
