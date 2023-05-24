@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Verificar se um arquivo foi enviado
     if ($arquivo['error'] === UPLOAD_ERR_OK) {
         $nomeArquivo = $arquivo['name'];
-        $caminhoArquivo = 'tree/main' . $nomeArquivo;
+        $caminhoArquivo = '/' . $nomeArquivo;
 
         // Ler o conteúdo do arquivo
         $conteudoArquivo = file_get_contents($arquivo['tmp_name']);
