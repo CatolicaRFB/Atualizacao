@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Verificar se um arquivo foi enviado
     if ($arquivo['error'] === UPLOAD_ERR_OK) {
         $nomeArquivo = $arquivo['name'];
-        $caminhoArquivo = 'https://github.com/CatolicaRFB/Arquivos' . $nomeArquivo;
+        $caminhoArquivo = 'CatolicaRFB/Arquivos' . $nomeArquivo;
 
         // Mover o arquivo para o local desejado
         if (move_uploaded_file($arquivo['tmp_name'], $caminhoArquivo)) {
